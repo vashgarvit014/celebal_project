@@ -1,0 +1,51 @@
+{"question":"Why does FastAPI rely on Python type hints for request parsing and validation?","ground_truth":"Curate after full corpus ingestion."}
+{"question":"Why was dependency injection designed around Depends instead of a global container?","ground_truth":"Curate after full corpus ingestion."}
+{"question":"Why does FastAPI support dependency overrides for testing?","ground_truth":"Curate after full corpus ingestion."}
+{"question":"Why are path operation functions allowed to be async or sync?","ground_truth":"Curate after full corpus ingestion."}
+{"question":"Why did FastAPI integrate tightly with Pydantic models?","ground_truth":"Curate after full corpus ingestion."}
+{"question":"Why does FastAPI generate OpenAPI schemas automatically?","ground_truth":"Curate after full corpus ingestion."}
+{"question":"Why was Starlette chosen as the underlying web toolkit?","ground_truth":"Curate after full corpus ingestion."}
+{"question":"Why does FastAPI expose APIRouter for modular applications?","ground_truth":"Curate after full corpus ingestion."}
+{"question":"Why are response models separate from input models?","ground_truth":"Curate after full corpus ingestion."}
+{"question":"Why does FastAPI validate query parameters with type annotations?","ground_truth":"Curate after full corpus ingestion."}
+{"question":"Why does FastAPI support OAuth2 helpers in the security module?","ground_truth":"Curate after full corpus ingestion."}
+{"question":"Why are background tasks part of the FastAPI interface?","ground_truth":"Curate after full corpus ingestion."}
+{"question":"Why did FastAPI add dependency caching?","ground_truth":"Curate after full corpus ingestion."}
+{"question":"Why can dependencies yield cleanup logic?","ground_truth":"Curate after full corpus ingestion."}
+{"question":"Why does FastAPI expose lifespan handling?","ground_truth":"Curate after full corpus ingestion."}
+{"question":"Why was TestClient documented as a first-class testing path?","ground_truth":"Curate after full corpus ingestion."}
+{"question":"Why does FastAPI support custom exception handlers?","ground_truth":"Curate after full corpus ingestion."}
+{"question":"Why are HTTPException details serializable JSON?","ground_truth":"Curate after full corpus ingestion."}
+{"question":"Why does FastAPI include WebSocket support?","ground_truth":"Curate after full corpus ingestion."}
+{"question":"Why does FastAPI support sub-applications and mounting?","ground_truth":"Curate after full corpus ingestion."}
+{"question":"Why did FastAPI change behavior around response status codes?","ground_truth":"Curate after full corpus ingestion."}
+{"question":"Why does FastAPI allow custom response classes?","ground_truth":"Curate after full corpus ingestion."}
+{"question":"Why was ORJSONResponse added?","ground_truth":"Curate after full corpus ingestion."}
+{"question":"Why does FastAPI include static files support through Starlette?","ground_truth":"Curate after full corpus ingestion."}
+{"question":"Why did FastAPI add support for annotated dependencies?","ground_truth":"Curate after full corpus ingestion."}
+{"question":"Why does FastAPI recommend Annotated for newer Python versions?","ground_truth":"Curate after full corpus ingestion."}
+{"question":"Why was Pydantic v2 migration handled with compatibility layers?","ground_truth":"Curate after full corpus ingestion."}
+{"question":"Why does FastAPI preserve support for older Python versions only for limited periods?","ground_truth":"Curate after full corpus ingestion."}
+{"question":"Why does FastAPI use examples in generated docs?","ground_truth":"Curate after full corpus ingestion."}
+{"question":"Why are tags and summaries included in path operation metadata?","ground_truth":"Curate after full corpus ingestion."}
+{"question":"Why does FastAPI allow dependency injection in routers and applications?","ground_truth":"Curate after full corpus ingestion."}
+{"question":"Why did FastAPI add separate handling for form data and files?","ground_truth":"Curate after full corpus ingestion."}
+{"question":"Why is python-multipart required for form parsing?","ground_truth":"Curate after full corpus ingestion."}
+{"question":"Why does FastAPI expose UploadFile instead of only bytes?","ground_truth":"Curate after full corpus ingestion."}
+{"question":"Why does FastAPI support custom OpenAPI schema generation?","ground_truth":"Curate after full corpus ingestion."}
+{"question":"Why were docs translations added to the repository?","ground_truth":"Curate after full corpus ingestion."}
+{"question":"Why does FastAPI have separate docs for advanced users?","ground_truth":"Curate after full corpus ingestion."}
+{"question":"Why are middleware APIs surfaced through FastAPI?","ground_truth":"Curate after full corpus ingestion."}
+{"question":"Why does FastAPI support CORS middleware configuration?","ground_truth":"Curate after full corpus ingestion."}
+{"question":"Why did FastAPI add better validation error formatting?","ground_truth":"Curate after full corpus ingestion."}
+{"question":"Why are dependency errors returned as request validation errors?","ground_truth":"Curate after full corpus ingestion."}
+{"question":"Why does FastAPI include jsonable_encoder?","ground_truth":"Curate after full corpus ingestion."}
+{"question":"Why does FastAPI allow response_model_exclude_none?","ground_truth":"Curate after full corpus ingestion."}
+{"question":"Why does FastAPI separate application state from request state?","ground_truth":"Curate after full corpus ingestion."}
+{"question":"Why did FastAPI add support for root_path behind proxies?","ground_truth":"Curate after full corpus ingestion."}
+{"question":"Why does FastAPI document deployment behind reverse proxies?","ground_truth":"Curate after full corpus ingestion."}
+{"question":"Why are security scopes modeled in OAuth2 dependencies?","ground_truth":"Curate after full corpus ingestion."}
+{"question":"Why did FastAPI add dependency support in WebSocket routes?","ground_truth":"Curate after full corpus ingestion."}
+{"question":"Why does FastAPI include reusable parameter classes like Query and Path?","ground_truth":"Curate after full corpus ingestion."}
+{"question":"Why does FastAPI encourage explicit status_code declarations?","ground_truth":"Curate after full corpus ingestion."}
+

@@ -1,3 +1,29 @@
+Metadata-Version: 2.4
+Name: patchcontext
+Version: 0.1.0
+Summary: RAG over FastAPI commit history, pull requests, and issue threads.
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: datasets>=2.20.0
+Requires-Dist: faiss-cpu>=1.8.0
+Requires-Dist: langchain>=0.2.16
+Requires-Dist: langchain-community>=0.2.16
+Requires-Dist: langchain-openai>=0.1.23
+Requires-Dist: openai>=1.40.0
+Requires-Dist: pandas>=2.2.2
+Requires-Dist: pydantic>=2.8.2
+Requires-Dist: python-dotenv>=1.0.1
+Requires-Dist: ragas>=0.1.20
+Requires-Dist: requests>=2.32.3
+Requires-Dist: streamlit>=1.37.0
+Requires-Dist: tenacity>=8.5.0
+Provides-Extra: dev
+Requires-Dist: pytest>=8.3.2; extra == "dev"
+Requires-Dist: ruff>=0.5.7; extra == "dev"
+Provides-Extra: nli
+Requires-Dist: torch>=2.3.0; extra == "nli"
+Requires-Dist: transformers>=4.44.0; extra == "nli"
+
 # PatchContext
 
 PatchContext is a RAG pipeline over the FastAPI repository's commit history, pull requests, and issue threads. It lets engineers ask "why was this designed this way?" and get answers grounded in developer discussions, with clickable citations to commit SHAs, PR numbers, and issue IDs.

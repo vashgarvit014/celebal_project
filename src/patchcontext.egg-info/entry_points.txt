@@ -1,0 +1,5 @@
+[console_scripts]
+patchcontext-ask = patchcontext.cli:main
+patchcontext-eval = patchcontext.evaluate:main
+patchcontext-index = patchcontext.index:main
+patchcontext-ingest = patchcontext.ingest:main

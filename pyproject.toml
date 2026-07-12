@@ -1,0 +1,45 @@
+[project]
+name = "patchcontext"
+version = "0.1.0"
+description = "RAG over FastAPI commit history, pull requests, and issue threads."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "datasets>=2.20.0",
+  "faiss-cpu>=1.8.0",
+  "langchain>=0.2.16",
+  "langchain-community>=0.2.16",
+  "langchain-openai>=0.1.23",
+  "openai>=1.40.0",
+  "pandas>=2.2.2",
+  "pydantic>=2.8.2",
+  "python-dotenv>=1.0.1",
+  "ragas>=0.1.20",
+  "requests>=2.32.3",
+  "streamlit>=1.37.0",
+  "tenacity>=8.5.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.3.2",
+  "ruff>=0.5.7",
+]
+nli = [
+  "torch>=2.3.0",
+  "transformers>=4.44.0",
+]
+
+[project.scripts]
+patchcontext-ingest = "patchcontext.ingest:main"
+patchcontext-index = "patchcontext.index:main"
+patchcontext-ask = "patchcontext.cli:main"
+patchcontext-eval = "patchcontext.evaluate:main"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
