@@ -1,6 +1,6 @@
 # Walkthrough - Running PatchContext RAG Application
 
-This document details how the project was successfully run and verified.
+This document details how the project was successfully run, visually polished, and verified.
 
 ## Accomplishments
 
@@ -13,22 +13,19 @@ This document details how the project was successfully run and verified.
    - Ran `patchcontext-ask` to query: *"What was the fix for the race condition in _IncludedRouter cache rebuild?"*
    - Verification succeeded and returned correct, grounded answers citing `PR #15977` and `Issue #15974`.
 
-3. **Streamlit App Launch**:
-   - Started the Streamlit UI server in the background:
-     ```bash
-     .venv/bin/streamlit run app.py
-     ```
-   - Streamlit is running successfully on **`http://localhost:8503`**.
+3. **Streamlit UI Visual Upgrade**:
+   - Added a modern, high-contrast dark theme in [.streamlit/config.toml](.streamlit/config.toml) using a curated zinc & indigo brand color palette (`#6366f1`) and sleek Google Fonts (`Inter` for body/headings and `JetBrains Mono` for code).
+   - Upgraded [app.py](app.py) layout to use responsive bordered cards (`st.container(border=True)`), modern inline symbols (`:material/quick_reference_all:`, `:material/verified:`, `:material/warning:`), clean spaces (`st.space()`), and status verification badges (`st.badge()`) for checking the hallucination guard.
 
 4. **UI Verification**:
    - A browser subagent verified the Streamlit web application.
-   - The subagent successfully typed queries into the UI, clicked the **Ask** button, and retrieved grounded responses citing source GitHub pull requests and commits.
+   - The subagent successfully typed queries into the UI, clicked the **Search Repository History** button, and retrieved grounded responses citing source GitHub pull requests and commits.
 
-## Video Demonstration
+## Video Demonstration (Upgraded UI)
 
-Below is the recorded browser interaction of our query run:
+Below is the recorded browser interaction showcasing our polished dark mode user interface:
 
-![Verification Recording](/Users/admin/.gemini/antigravity-ide/brain/e04680bc-d680-4153-b30e-ed4c2b48e194/streamlit_ui_query_1783828304412.webp)
+![Verification Recording](/Users/admin/.gemini/antigravity-ide/brain/e04680bc-d680-4153-b30e-ed4c2b48e194/upgraded_ui_run_1783871912028.webp)
 
 ---
 
