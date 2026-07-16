@@ -25,7 +25,7 @@ This document details how the project was successfully run, visually polished, a
 
 Below is the recorded browser interaction showcasing our polished dark mode user interface:
 
-![Verification Recording](/Users/admin/.gemini/antigravity-ide/brain/e04680bc-d680-4153-b30e-ed4c2b48e194/upgraded_ui_run_1783871912028.webp)
+![Verification Recording](app_demo_video.webp)
 
 ---
 

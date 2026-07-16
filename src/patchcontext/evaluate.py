@@ -38,7 +38,20 @@ def build_eval_dataset(rows: list[dict[str, str]], limit: int | None = None) -> 
 def run_evaluation(questions_path: Path, out: Path, limit: int | None = None) -> dict:
     dataset = build_eval_dataset(load_questions(questions_path), limit=limit)
     metrics = [faithfulness, answer_relevancy, context_precision, context_recall]
-    result = evaluate(dataset, metrics=metrics)
+    
+    from langchain_openai import ChatOpenAI
+    from langchain_community.embeddings import HuggingFaceEmbeddings
+    from patchcontext.config import get_settings
+    
+    settings = get_settings()
+    llm = ChatOpenAI(
+        api_key=settings.openai_api_key, 
+        base_url="https://api.groq.com/openai/v1", 
+        model="llama-3.3-70b-versatile"
+    )
+    embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
+    
+    result = evaluate(dataset, metrics=metrics, llm=llm, embeddings=embeddings)
     frame = result.to_pandas()
     out.parent.mkdir(parents=True, exist_ok=True)
     frame.to_json(out, orient="records", indent=2)
