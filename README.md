@@ -1,5 +1,6 @@
 # PatchContext
 
+![PatchContext Demo](app_demo_video.webp)
 PatchContext is a RAG pipeline over the FastAPI repository's commit history, pull requests, and issue threads. It lets engineers ask "why was this designed this way?" and get answers grounded in developer discussions, with clickable citations to commit SHAs, PR numbers, and issue IDs.
 
 It uses LangChain, FAISS, OpenAI `text-embedding-ada-002`, `gpt-4o-mini`, MMR retrieval for source diversity, a citation/NLI hallucination guard, a Streamlit UI, and RAGAs evaluation on a 50-question benchmark.
